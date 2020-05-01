@@ -1,0 +1,10 @@
+<header class="border border-primary m-3">
+	<h4>
+		Election Commission Parent component.
+	</h4>
+	<h6>Vote Counting (via ViewChild)</h6>
+	<button (click)="start()">Start Vote Counting</button>
+	<button (click)="stop()">Stop Vote Counting(Lunch Break)</button>
+	<div class="seconds">{{ seconds() }}</div>
+	<app-ecchild></app-ecchild>
+</header>
