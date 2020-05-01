@@ -8,25 +8,19 @@ export class EcchildComponent implements OnInit, OnDestroy {
   intervalId = 0;
   message = "";
   seconds = 0;
-
-  constructor() {}
-  
+  constructor() {}  
   ngOnInit() {
     this.start();
   }
-
   ngOnDestroy() {
     this.clearTimer();
-  }
-  
+  }  
   clearTimer() {
     clearInterval(this.intervalId);
-  }  
-  
+  }    
   start() {
     this.countDown();
-  }
-  stop() {
+  }  stop() {
     this.clearTimer();
     this.message = `Holding at T-${this.seconds} seconds`;
   }
